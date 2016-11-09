@@ -1,4 +1,10 @@
 
+// resets board on controller.js incase of page reload
+window.onload=function(){
+	$.post(currentURL + "/reset" );
+};
+
+
 var currentURL = window.location.origin;
 
 var player = "X";
